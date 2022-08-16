@@ -81,6 +81,11 @@ public class Runner {
         }
         System.out.println("(numbers contains 1 next to a 1) is: " + result);
 
+//        or:
+//        for (int i = 0; i < numbers.size(); i++) {
+//         if (numbers.get(i) == 1 && numbers.get(i + 1) == 1){
+//          result = true;
+
 //        4. Print the sum of the numbers,
         int sumOfNumbers = 0;
         for (int number : numbers){
@@ -93,14 +98,16 @@ public class Runner {
 //           ...and numbers that come immediately after a 13 also do not count.
 //
 //          So [7, 13, 2] would have sum of 9.
-        int total = 0;
-        for (int number : numbers){
-            if(number == 13){
-                break;
-            }
-            total += number;
-        }
-        System.out.println("Sum of numbers (no 13!): " + total);
+//
+//        SOLUTION BROKEN:
+//        int total = 0;
+//        for (int number : numbers){
+//            if(number == 13){
+//                break;
+//            }
+//            total += number;
+//        }
+//        System.out.println("Sum of numbers (no 13!): " + total);
 
     }
 
